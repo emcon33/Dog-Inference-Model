@@ -53,8 +53,22 @@ curl -X POST -F image=@dog.jpg 'http://keras-default.apps.rosa-rrtdp.bmcz.p1.ope
 
 curl -X POST -F image=@dog.jpg 'http://keras-app-keras-app.apps.rosa-xbjcs.lfis.p1.openshiftapps.com/predict'
 
+
+Demo Route 
+curl -X POST -F image=@dog.jpg 'http://keras-app-keras-app.apps.rosa-9kn6r.01su.p1.openshiftapps.com/predict'
+
 kubectl run keras-app --image=andrewwg/keras-app --port 5000 — dry-run=client -oyaml > test.yaml
 kubectl expose pod keras-app --port 80 --target-port 5000 — dryearrun=client -oyaml >test.yaml
 
 kubectl apply -f dog-inference.yaml
 kubectl apply -f dog-inference-expose.yaml
+
+
+
+Tommy Demo Github 
+https://github.com/nodeshift-archived/nodejs-rest-http-redhat
+
+Dog Inference
+https://github.com/emcon33/Dog-Inference-Model
+
+
