@@ -1,6 +1,6 @@
 # AI Inference of a dog breed via a contanerized app 
-#Keras App is a datascience inference instance using Docker, Python, Keras and Tensorflow with pre-trained Resnet 50 to identify dog breeds in images. 
-#Derived from medium article and deployed to OpenShift (ROSA)
+#Dog-Inference-Model is a datascience inference instance using Docker, Python, Keras and Tensorflow with pre-trained Resnet 50 to identify dog breeds in images. 
+#Derived from medium article and deployed to OpenShift (ROSA) see link below for the source, ported to OpenShift and ROSA on AWS
 
 #See the files reamde.txt and commands.txt for more detail: (I'm a fan of Niel Stephenson Reamde.txt is my nod to sci-fi). 
 #Derived Keras-app AI inference instance deployable to an AWS resident Managed OpenShift (ROSA) cluster for inference. 
