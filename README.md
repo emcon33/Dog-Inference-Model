@@ -2,9 +2,9 @@
 #Dog-Inference-Model is a datascience inference instance using Docker, Python, Keras and Tensorflow with pre-trained Resnet 50 to identify dog breeds in images. 
 #Derived from medium article and deployed to OpenShift (ROSA) see link below for the source, ported to OpenShift and ROSA on AWS
 
-#See the files reamde.txt and commands.txt for more detail: (I'm a fan of Niel Stephenson Reamde.txt is my nod to sci-fi). 
+#See the files reamde.txt for more detail: (I'm a fan of Niel Stephenson Reamde.txt is my nod to sci-fi). 
 #Derived Keras-app AI inference instance deployable to an AWS resident Managed OpenShift (ROSA) cluster for inference. 
-#Original Medium Article base below was different. 
+#Original Medium Article base was GCP, Linux, GKE... but containers make this very portable.  
 #Modified to local Docker (Mac) and Minikube/OpenShift/ROSA model. 
 #yaml versions are in development 
 
