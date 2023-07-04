@@ -8,6 +8,8 @@
 #Modified to local Docker (Mac) and Minikube/OpenShift/ROSA model. 
 #yaml versions are in development 
 
+A prebuilt docker image is public at andrewwg/dog-inference:latest 
+
 # This uses Python, a Keras container, Tensorflow with the pre-trained Resnet50 image classification model. 
 
 #https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76
