@@ -1,14 +1,14 @@
-#Derived Keras-app AI inference instance deployable to ROSA. 
+#Derived Keras-app AI inference instance deployable to Podman and ROSA. 
 #Original Medium Article base below. 
 Modified to local Docker (Mac) and Minikube/OpenShift/ROSA model.
 Pre-built docker image is at andrewwg/dog-inference:latest 
 
-
+Original Source. 
 https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76
 
-change into dog-inference directory 
 
-ensure docker/kubernetes are running 
+#1 
+ensure podman/docker/kubernetes are running 
 
 Docker Only 
 cd ./dog-inference
@@ -20,6 +20,7 @@ curl -X POST -F image=@dog.jpeg 'http://localhost:5000/predict'
 docker pull docker andrewwg/dog-inference:latest
 
 Podman Version
+podman pull andrewwg/dog-inference:latest
 sudo podman run -d -p 5000:5000 docker.io/andrewwg/dog-inference 
 podman image list 
 podman container list 
@@ -55,8 +56,5 @@ oc get ingresses.config/cluster -o jsonpath={.spec.domain}
 example route: http://dog-inference.default.apps.rosa-rrtdp.bmcz.p1.openshiftapps.com%
 curl -X POST -F image=@dog.jpg 'http://dog-inference-default.apps.rosa-rrtdp.bmcz.p1.openshiftapps.com/predict'
 
-curl -X POST -F image=@dog.jpg 'http://dog-inference-default.apps.rosa-6l8s4.197s.p1.openshiftapps.com/predict'
-
-curl -X POST -F image=@dog.jpg 'https://api.rosa-f2vf5.rzo3.p1.openshiftapps.com:6443/predict'
 
 
